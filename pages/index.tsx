@@ -21,7 +21,6 @@ export default function Home({ filteredCoins }: any) {
 
   return (
     <Layout>
-      <div>Hello world</div>
       <InputSearch type="text" placeholder="Search" onChange={handleSearch} />
       <CoinsList filteredCoins={allCoins} />
     </Layout>
