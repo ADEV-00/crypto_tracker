@@ -10,7 +10,7 @@ const Layout = ({ children }: any) => {
       <header className="text-center font-bold text-white text-3xl my-10">
         Crypto Tracker
       </header>
-      <main className="bg-red-500 w-6/12 px-5">{children}</main>
+      <main className="glass_effect w-6/12 px-5 rounded-lg h-[80vh] overflow-y-scroll mb-10 scroll_hidden">{children}</main>
     </div>
   );
 };

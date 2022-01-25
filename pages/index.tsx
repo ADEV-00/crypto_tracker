@@ -17,7 +17,6 @@ export default function Home({ filteredCoins }: any) {
     coin.name.toLowerCase().includes(currSearch.toLowerCase())
   );
 
-  console.log(allCoins);
 
   return (
     <Layout>

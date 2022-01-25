@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.glass_effect {
+  background: linear-gradient(
+    111.86deg,
+    rgba(255, 255, 255, 0.18) 0%,
+    rgba(255, 255, 255, 0) 100.49%
+  );
+  backdrop-filter: blur(177px);
+}
+
+.scroll_hidden::-webkit-scrollbar {
+  display: none;
+}
