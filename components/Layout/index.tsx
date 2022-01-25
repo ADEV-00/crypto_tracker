@@ -7,8 +7,10 @@ const Layout = ({ children }: any) => {
       <Head>
         <title>Crypto Tracker</title>
       </Head>
-      <header className="text-center font-bold text-white text-3xl mt-10">Crypto Tracker</header>
-      <main className="bg-red-500 w-6/12">{children}</main>
+      <header className="text-center font-bold text-white text-3xl my-10">
+        Crypto Tracker
+      </header>
+      <main className="bg-red-500 w-6/12 px-5">{children}</main>
     </div>
   );
 };
