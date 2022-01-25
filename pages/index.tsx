@@ -23,7 +23,7 @@ export default function Home({ filteredCoins }: any) {
     <Layout>
       <div>Hello world</div>
       <InputSearch type="text" placeholder="Search" onChange={handleSearch} />
-      <CoinsList />
+      <CoinsList filteredCoins={allCoins} />
     </Layout>
   );
 }
