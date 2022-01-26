@@ -20,11 +20,14 @@ const CoinTab = ({
   priceChange,
 }: CoinTabProps) => {
   return (
-    <div className="flex flex-row items-center p-3 mb-3 bg-blue-500 rounded-md bg-gradient-to-r from-[#02004E] to-[#1D1B5B] text-white">
+    <div className="flex flex-row justify-between items-center p-3 mb-3 bg-blue-500 rounded-md bg-gradient-to-r from-[#02004E] to-[#1D1B5B] text-white">
       <img src={image} alt={name} width={30} height={30} />
-      <div>{name}</div>
-      <div>{price}</div>
-      <div>{volume}</div>
+      <div className="w-24">{name}</div>
+      <div className="w-12">{symbol}</div>
+      <div className="w-20">{price}</div>
+      <div className="w-24">{volume.toLocaleString()}</div>
+      <div className="w-12">{priceChange.toFixed(2)}%</div>
+      <div>Mkt Cap: ${marketcap.toLocaleString()}</div>
     </div>
   );
 };
