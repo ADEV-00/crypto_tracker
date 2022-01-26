@@ -24,7 +24,7 @@ const CoinTab = ({
       <img src={image} alt={name} width={30} height={30} />
       <div className="w-24">{name}</div>
       <div className="w-12">{symbol}</div>
-      <div className="w-20">{price}</div>
+      <div className="w-20">${price}</div>
       <div className="w-24">{volume.toLocaleString()}</div>
       {priceChange < 0 ? (
         <div className="w-12 text-red-600">{priceChange.toFixed(2)}%</div>
