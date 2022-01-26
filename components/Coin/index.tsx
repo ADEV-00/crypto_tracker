@@ -26,7 +26,12 @@ const CoinTab = ({
       <div className="w-12">{symbol}</div>
       <div className="w-20">{price}</div>
       <div className="w-24">{volume.toLocaleString()}</div>
-      <div className="w-12">{priceChange.toFixed(2)}%</div>
+      {priceChange < 0 ? (
+        <div className="w-12 text-red-600">{priceChange.toFixed(2)}%</div>
+      ) : (
+        <div className="w-12 text-green-600">{priceChange.toFixed(2)}%</div>
+      )}
+
       <div>Mkt Cap: ${marketcap.toLocaleString()}</div>
     </div>
   );
